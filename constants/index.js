@@ -6,7 +6,7 @@ module.exports = {
     'classNameTemplate': '{file}:{line}:{column} - {message} ({ruleId})',
     'output': path.join(process.cwd(), './junit_eslint.xml'),
     'suiteName': 'eslint tests',
-    'titleTemplate': '{line} : {source}'
+    'titleTemplate': '{file}:{line}:{column} - {message} ({ruleId})'
   },
   'ENVIRONMENT_CONFIG_MAP': {
     'ESLINT_JUNIT_CLASSNAME': 'classNameTemplate',
