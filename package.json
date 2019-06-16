@@ -1,10 +1,10 @@
 {
-  "name": "eslint-junit",
-  "version": "1.0.1",
+  "name": "@regru/eslint-junit",
+  "version": "1.1.0",
   "description": "A eslint result processor that generates junit xml files",
   "main": "index.js",
-  "repository": "https://github.com/jcgertig/eslint-junit",
-  "author": "Jonathan Gertig",
+  "repository": "https://github.com/regru/eslint-junit",
+  "author": "REG.RU LLC",
   "license": "Apache-2.0",
   "tags": [
     "eslint",
@@ -13,7 +13,7 @@
     "ci"
   ],
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "files": [
     "index.js",

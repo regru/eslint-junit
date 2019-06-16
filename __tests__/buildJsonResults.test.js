@@ -7,7 +7,8 @@ const constants = require('../constants/index');
 const getResults = function getResults (name, overrides = {}, path = '') {
   const testsReport = require(`../__mocks__/${name}`);
 
-  return buildJsonResults(testsReport, path,
+  return buildJsonResults(
+testsReport, path,
     Object.assign({}, constants.DEFAULT_OPTIONS, overrides)
   );
 };
@@ -30,7 +31,7 @@ describe('buildJsonResults', () => {
 
   it('should return the proper classname when classNameTemplate is default', () => {
     const jsonResults = getResults('failing-tests.json');
-    expect(jsonResults.testsuites[1].testsuite[1].testcase[0]._attr.classname).toBe('no-sync');
+    expect(jsonResults.testsuites[1].testsuite[1].testcase[0]._attr.classname).toBe('npm packages/eslint-junit/utils/getOptions.js:26:9 - Unexpected sync method: \'existsSync\'. (no-sync)');
   });
 
   it('should return the proper classname when classNameTemplate is customized', () => {

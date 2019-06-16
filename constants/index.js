@@ -3,8 +3,8 @@ const path = require('path'); // eslint-disable-line
 
 module.exports = {
   'DEFAULT_OPTIONS': {
-    'classNameTemplate': '{ruleId}',
-    'output': path.join(process.cwd(), './eslint-junit.xml'),
+    'classNameTemplate': '{file}:{line}:{column} - {message} ({ruleId})',
+    'output': path.join(process.cwd(), './junit_eslint.xml'),
     'suiteName': 'eslint tests',
     'titleTemplate': '{line} : {source}'
   },
