@@ -4,28 +4,25 @@
 [![Dependencies][deps]][package-url]
 [![Dev Dependencies][dev-deps]][package-url]
 [![License][license]][package-url]
-[![Build Status](https://travis-ci.org/jcgertig/eslint-junit.svg?branch=master)](https://travis-ci.org/jcgertig/eslint-junit)
-[![Code Climate](https://codeclimate.com/github/jcgertig/eslint-junit/badges/gpa.svg)](https://codeclimate.com/github/jcgertig/eslint-junit)
-[![Test Coverage](https://codeclimate.com/github/jcgertig/eslint-junit/badges/coverage.svg)](https://codeclimate.com/github/jcgertig/eslint-junit/coverage)
 
 # eslint-junit
 A eslint reporter that creates compatible junit xml files
 
 ## Installation
 ```shell
-yarn add --dev eslint-junit
+yarn add --dev @regru/eslint-junit
 ```
 
 ## Usage
 Simply run:
 
 ```shell
-eslint -f ./node_modules/eslint-junit/index.js
+eslint -f ./node_modules/@regru/eslint-junit/index.js
 ```
 
 ## Configuration
 
-`eslint-junit` offers four configurations based on environment variables or a `eslint-junit` key defined in `package.json`. All configuration values should be **strings**.
+`@regru/eslint-junit` offers four configurations based on environment variables or a `eslint-junit` key defined in `package.json`. All configuration values should be **strings**.
 
 | Variable Name | Description | Default |
 |--|--|--|
